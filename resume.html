@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>James, Peter Ugochukwu - Resume</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        :root {
+            --primary-color: #1a73e8;
+            --secondary-color: #222;
+            --bg-color: #fff;
+            --text-color: #333;
+            --light-gray: #f5f5f5;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Arial, sans-serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            background: var(--bg-color);
+            padding: 2rem;
+        }
+
+        .resume-container {
+            max-width: 850px;
+            margin: 0 auto;
+            background: white;
+            box-shadow: 0 2px 12px rgba(0,0,0,0.1);
+            padding: 2rem;
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 2rem;
+            padding-bottom: 1rem;
+            border-bottom: 2px solid var(--primary-color);
+        }
+
+        .header h1 {
+            color: var(--secondary-color);
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .header p {
+            color: var(--primary-color);
+            font-size: 1.2rem;
+        }
+
+        .contact-info {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            margin-top: 1rem;
+            flex-wrap: wrap;
+        }
+
+        .contact-info a {
+            color: var(--text-color);
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .contact-info a:hover {
+            color: var(--primary-color);
+        }
+
+        .section {
+            margin-bottom: 2rem;
+        }
+
+        .section-title {
+            color: var(--primary-color);
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 1px solid #eee;
+        }
+
+        .experience-item, .education-item {
+            margin-bottom: 1.5rem;
+        }
+
+        .experience-item h3, .education-item h3 {
+            color: var(--secondary-color);
+            margin-bottom: 0.3rem;
+        }
+
+        .experience-item .company, .education-item .school {
+            color: var(--primary-color);
+            font-weight: 500;
+        }
+
+        .date {
+            color: #666;
+            font-size: 0.9rem;
+        }
+
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1rem;
+        }
+
+        .skill-category {
+            background: var(--light-gray);
+            padding: 1rem;
+            border-radius: 4px;
+        }
+
+        .skill-category h4 {
+            color: var(--primary-color);
+            margin-bottom: 0.5rem;
+        }
+
+        .skill-list {
+            list-style: none;
+        }
+
+        .skill-list li {
+            margin-bottom: 0.3rem;
+        }
+
+        .achievement-list li, .certification-list li {
+            margin-bottom: 0.5rem;
+            list-style-type: none;
+            position: relative;
+            padding-left: 1.5rem;
+        }
+
+        .achievement-list li:before, .certification-list li:before {
+            content: "▹";
+            color: var(--primary-color);
+            position: absolute;
+            left: 0;
+        }
+
+        .print-button {
+            position: fixed;
+            bottom: 2rem;
+            right: 2rem;
+            background: var(--primary-color);
+            color: white;
+            padding: 0.8rem 1.5rem;
+            border-radius: 25px;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            transition: all 0.3s ease;
+        }
+
+        .print-button:hover {
+            background: var(--secondary-color);
+            transform: translateY(-2px);
+        }
+
+        @media print {
+            body {
+                padding: 0;
+            }
+
+            .resume-container {
+                box-shadow: none;
+            }
+
+            .print-button {
+                display: none;
+            }
+        }
+
+        @media (max-width: 768px) {
+            body {
+                padding: 1rem;
+            }
+
+            .contact-info {
+                flex-direction: column;
+                gap: 1rem;
+                align-items: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="resume-container">
+        <header class="header">
+            <h1>JAMES PETER UGOCHUKWU</h1>
+            <p>Computer Science Graduate | Security Systems Specialist</p>
+            <div class="contact-info">
+                <a href="mailto:peterugochukwujames@gmail.com">
+                    <i class="fas fa-envelope"></i> peterugochukwujames@gmail.com
+                </a>
+                <a href="tel:+2348122385972">
+                    <i class="fas fa-phone"></i> +234 812 238 5972
+                </a>
+                <a href="https://github.com/raiderpet" target="_blank">
+                    <i class="fab fa-github"></i> GitHub
+                </a>
+                <a href="https://www.linkedin.com/in/peter-james-957910197" target="_blank">
+                    <i class="fab fa-linkedin"></i> LinkedIn
+                </a>
+            </div>
+        </header>
+
+        <section class="section">
+            <h2 class="section-title">Professional Summary</h2>
+            <p>
+                Dynamic and results-driven Computer Science graduate with a strong foundation in biometric security systems. Proven ability to
+                work collaboratively in team settings and manage resources effectively. Seeking to leverage technical skills and project
+                management expertise in a challenging IT role.
+            </p>
+        </section>
+
+        <section class="section">
+            <h2 class="section-title">Key Achievements</h2>
+            <ul class="achievement-list">
+                <li>Developed a biometric security project that enhanced border security at the Federal Polytechnic Bida.</li>
+                <li>Successfully managed a team of 5 in a high-pressure environment, improving project delivery time by 15%.</li>
+                <li>Implemented a resource management system that reduced material waste by 10%.</li>
+                <li>Conducted workshops on information dissemination techniques, increasing team efficiency by 20%.</li>
+            </ul>
+        </section>
+
+        <section class="section">
+            <h2 class="section-title">Professional Experience</h2>
+            <div class="experience-item">
+                <h3>IT Assistant</h3>
+                <div class="company">EmmaBross Integrated Services</div>
+                <div class="date">2015 – 2017</div>
+                <ul>
+                    <li>Assisted in the development and implementation of IT solutions, improving system efficiency by 25%.</li>
+                    <li>Collaborated with cross-functional teams to enhance service delivery and client satisfaction.</li>
+                    <li>Managed IT inventory, ensuring optimal resource allocation and reducing downtime by 30%.</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2 class="section-title">Education</h2>
+            <div class="education-item">
+                <h3>Higher National Diploma in Computer Science</h3>
+                <div class="school">The Federal Polytechnics Bida, Niger State</div>
+                <div class="date">2022</div>
+            </div>
+            <div class="education-item">
+                <h3>National Diploma in Computer Science</h3>
+                <div class="school">The Federal Polytechnics Bida, Niger State</div>
+                <div class="date">2018</div>
+            </div>
+            <div class="education-item">
+                <h3>Senior Secondary School Certificate</h3>
+                <div class="school">St. Johns Secondary School, Bida</div>
+                <div class="date">2015</div>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2 class="section-title">Skills & Expertise</h2>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h4>Technical Skills</h4>
+                    <ul class="skill-list">
+                        <li>Biometric Security Systems</li>
+                        <li>Java Programming</li>
+                        <li>Python Development</li>
+                        <li>SQL Database Management</li>
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <h4>Professional Skills</h4>
+                    <ul class="skill-list">
+                        <li>Team Collaboration</li>
+                        <li>Information Dissemination</li>
+                        <li>Resource Management</li>
+                        <li>Problem Solving</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2 class="section-title">Certifications</h2>
+            <ul class="certification-list">
+                <li>Certified Information Systems Security Professional (CISSP) – ISC2, 2023</li>
+                <li>Project Management Professional (PMP) – PMI, 2022</li>
+            </ul>
+        </section>
+
+        <section class="section">
+            <h2 class="section-title">Languages</h2>
+            <p>English (Fluent)</p>
+        </section>
+    </div>
+
+    <a href="#" onclick="window.print(); return false;" class="print-button">
+        <i class="fas fa-print"></i> Print Resume
+    </a>
+</body>
+</html>
